@@ -231,13 +231,37 @@
 
   h1.name {
     font-family: var(--font-name); font-weight: 400;
-    font-size: clamp(90px, 20vw, 196px); line-height: 1; letter-spacing: 1px; margin-top: 0px;
+    font-size: clamp(90px, 20vw, 196px); line-height: 1; letter-spacing: 1px; margin-top: 5px;
   }
 
-  .cover-sub { margin-top: -20px; font-size: 25px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); }
+  .cover-sub { margin-top: 5px; font-size: 25px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); }
   .cover-date { margin-top: 200px; font-family: var(--font-display); font-size: clamp(31px, 5.6vw, 42px); font-style: italic; color: var(--gold); }
-  .cover-phrase { margin-top: 20px; max-width: 460px; font-size: 22px; line-height: 1.7; color: var(--text-dim); }
+  .cover-phrase { margin-top: 40px; max-width: 460px; font-size: 22px; line-height: 1.7; color: var(--text-dim); }
 
+  @media (max-width: 600px) {
+
+    .eyebrow {
+        margin-bottom: 5px;
+    }
+
+    h1.name {
+        margin-top: 0;
+    }
+
+    .cover-sub {
+        margin-top: 0;
+      font-size: 18px;
+    }
+
+    .cover-date {
+        margin-top: 150px;
+    }
+
+    .cover-phrase {
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+  
   .scroll-hint {
     position: absolute; bottom: 34px; left: 50%; transform: translateX(-50%);
     font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim);
