@@ -309,7 +309,7 @@
     margin: 0;
     margin-left: calc(-50vw + 50%);
     padding: 40px 20px;
-    background-image: url('images/COUNTDOWN-BG.png');
+    background-image: url('file:///C:/Users/PC/Documents/PROYECTOS/IMAGES/COUNTDOWN-BG.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -442,6 +442,61 @@
 
   .gate-btn { margin-top: 46px; }
 
+  @media (max-width: 768px) {
+    #portada {
+      padding-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .portada-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      margin-top: 150px;
+    }
+
+    .disco-ball-wrap {
+      top: 20px;
+    }
+
+    .disco-ball-image {
+      width: min(260px, 70vw);
+      margin-top: 0;
+    }
+
+    .eyebrow,
+    .cover-sub,
+    .cover-date,
+    .cover-phrase,
+    .name {
+      position: relative;
+      z-index: 3;
+    }
+
+    .cover-date {
+      margin-top: 30px;
+    }
+
+    .cover-phrase {
+      margin-top: 26px;
+      font-size: 12px;
+      padding: 0 12px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #portada {
+      min-height: 100svh;
+    }
+
+    .portada-content {
+      position: relative;
+      top: 100px;
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .reveal { transition: none; opacity: 1; transform: none; }
     .scroll-hint .dot, .disco-ball-image, .wave-1, .wave-2, .wave-3, .vline { animation: none; }
@@ -457,12 +512,12 @@
     <div class="gate-content">
       <div class="gate-disco-ball-wrap" aria-hidden="true">
         <div class="gate-disco-ball-glow"></div>
-        <img class="gate-disco-ball-image" src="IMAGES/FONDO-BALL.png" alt="" aria-hidden="true" />
+        <img class="gate-disco-ball-image" src="file:///C:/Users/PC/Documents/PROYECTOS/IMAGES/FONDO-BALL.png" alt="" aria-hidden="true" />
       </div>
 
 <img
   class="opening-svg"
-  src="SVG/FONDO-PORTADA-APERTURA.svg"
+  src="file:///C:/Users/PC/Documents/PROYECTOS/SVG/FONDO-PORTADA-APERTURA.svg"
   alt=""
   aria-hidden="true"
 >
@@ -482,14 +537,14 @@
     <!-- Fondo de estrellas -->
     <img
         class="stars-background"
-        src="SVG/STARS.svg"
+        src="file:///C:/Users/PC/Documents/PROYECTOS/SVG/STARS.svg"
         alt=""
         aria-hidden="true"
     />
     
     <div class="disco-ball-wrap" aria-hidden="true">
       <div class="disco-ball-glow"></div>
-      <img class="disco-ball-image" src="IMAGES/FONDO-BALL.png" alt="" aria-hidden="true" />
+      <img class="disco-ball-image" src="file:///C:/Users/PC/Documents/PROYECTOS/IMAGES/FONDO-BALL.png" alt="" aria-hidden="true" />
     </div>
 
     <div class="portada-content">
@@ -630,7 +685,7 @@
 
   <!-- ============ MÚSICA DE FONDO ============ -->
   <audio id="bgMusic" loop preload="auto">
-    <source src="AUDIO/Music-BG-SC.mp3" type="audio/mpeg">
+    <source src="file:///C:/Users/PC/Documents/PROYECTOS/AUDIO/Music-BG-SC.mp3" type="audio/mpeg">
   </audio>
 
   <script>
