@@ -25,7 +25,7 @@
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html { scroll-snap-type: y proximity; scroll-behavior: smooth; }
+  html { scroll-snap-type: none; scroll-behavior: smooth; }
 
   body {
     background: radial-gradient(circle at 50% 20%, var(--bg-soft), var(--bg) 70%);
@@ -488,12 +488,12 @@
 
   @media (max-width: 600px) {
     #portada {
-      min-height: 100svh;
+      min-height: 80svh;
     }
 
     .portada-content {
       position: relative;
-      top: 10px;
+      top: 0px;
     }
   }
 
