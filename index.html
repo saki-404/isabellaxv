@@ -346,6 +346,25 @@
     background-repeat: no-repeat;
   }
 
+  #spotify {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .spotify-block {
+    max-width: 520px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .spotify-message {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(24px, 4.5vw, 32px);
+    line-height: 1.25;
+    margin-bottom: 28px;
+  }
+  
   @media (max-width: 600px) {
     .tu-seccion {
         background-size: contain;
@@ -714,7 +733,18 @@
     </div>
   </section>
 
-  <!-- ============ SECCIÓN 8: COMPARTE TUS FOTOS ============ -->
+  <!-- ============ SECCIÓN 8: PLAYLIST ============ -->
+  <section id="spotify">
+    <div class="spotify-block">
+      <p class="dress-title reveal">¿Tienes una sugerencia musical?</p>
+      <p class="spotify-message reveal">Agregala en la playlist</p>
+      <a class="btn-outline reveal" href="https://open.spotify.com/playlist/3Ecq6RsYbz6kk5RHsaFvsJ?si=Pq52jbIpTBKg0lDfspBykg&amp;utm_source=copy-link&amp;pt=b90a576c0c2078657bbd2ab696774f20&amp;pi=us8sAD9DSce2d" target="_blank" rel="noopener">
+        IR A SPOTIFY
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ SECCIÓN 9: COMPARTE TUS FOTOS ============ -->
   <section id="instagram">
     <div class="insta-block">
       <p class="dress-title reveal">Comparte tus fotos</p>
